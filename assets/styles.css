@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./Poppins/Poppins-Light.ttf);
+}
 :root{
   --primary-color:#3a6cf4;
   --background-color:#000016;
@@ -6,8 +10,9 @@
   margin:0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: sans-serif;
+  font-family: Poppins, sans-serif;
   box-sizing: border-box;
+  line-height: 25px;
 
 }
 body{
@@ -75,6 +80,7 @@ header .navigation a:hover{
   color: #0b0101;
   font-size: 1.5em;
   font-weight: 300;
+  padding-bottom: 20px;
 }
 
 .main .content .intro{
@@ -143,6 +149,9 @@ header .navigation a:hover{
 .about .content .col-right{
   position:relative;
   width: 50%;
+}
+.about .content .col-right h2{
+  line-height: 45px;
 }
 .about .content .col-left .img-card{
   position: relative;
